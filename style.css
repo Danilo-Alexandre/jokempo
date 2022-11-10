@@ -1,0 +1,154 @@
+body{
+    background-color: rgba(206, 151, 1, 0.616);
+    margin: 0;
+}
+.board{
+    margin-top: 100px;
+    background-color: rgba(92, 92, 92, 0.733);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#square{
+    margin: auto;
+    margin-top: 20px;
+    border: black solid 2px;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 8px;
+
+
+}
+
+#line{
+    height: 100px;
+    border-left: 2px solid black;
+}
+
+#user{
+    margin-left: -15%;
+    padding: 3px 15px 3px 15px;
+    background-color: brown;
+}
+#comp{
+    margin-right: -18%;
+    padding: 3px 15px 3px 15px;
+    background-color: brown;
+}
+#score1{
+    margin-left: -15px;
+    font-size: 60px;
+}
+#score2{
+    margin-right: -15px;
+    font-size: 60px;
+}
+
+.player1{
+    align-self: center;
+    margin-top: 10px;          
+    
+}
+
+#Rock{
+    
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(assets/pedra.png);
+    background-size: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: none;
+    opacity: 0.5;
+    height: 115px;
+    width: 115px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;   
+    transition: opacity;
+    transition-duration: 0.5s;
+}
+
+#Rock:hover{
+    opacity: 1.1;
+}
+
+#Paper{
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(assets/papel.png);
+    background-size: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: none;
+    opacity: 0.5;
+    height: 115px;
+    width: 115px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity;
+    transition-duration: 0.5s;
+ 
+}
+#Paper:hover{
+    opacity: 1.1;
+}
+
+#Scissor{
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(assets/tesoura.png);
+    background-size: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 80px;
+    border-style: none;
+    opacity: 0.5;
+    height: 115px;
+    width: 115px;
+    transform: rotate(-90deg);
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity; 
+    transition-duration: 0.4s;
+    
+}
+#Scissor:hover{
+    opacity: 1.1;
+    
+    
+}
+
+#pl2{
+    color: white;
+   text-align: center;   
+   margin-top: -5px;
+    
+}
+
+span{
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#resultado{
+    color: white;
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#restart{
+    font-size: 20px;
+    align-self: center;
+    margin: 40px;
+    height: 45px;
+    width: 90px;
+    border-radius: 20px;
+    cursor: pointer;
+}
